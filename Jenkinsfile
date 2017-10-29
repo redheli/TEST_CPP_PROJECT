@@ -16,6 +16,7 @@ stages {
 		echo "running groups" & groups
 		echo $PWD
 		echo "ls" && ls
+		echo "ls build" && ls -la build
                 mkdir build
                 cd build
                 cmake ..
