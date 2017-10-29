@@ -7,6 +7,14 @@ agent {
     }
 }
 stages {
+    stage('Prerequisites') {
+        steps {
+            sh """#!/usr/bin/env bash
+                set -eux
+                ./setup.sh
+            """
+        }
+    }
     stage('Build All') {
         steps {
             echo "Building ${env.BUILD_DIR}"
