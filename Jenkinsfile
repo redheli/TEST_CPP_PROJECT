@@ -29,7 +29,15 @@ stages {
                 cd build
                 cmake ..
                 make
-                popd
+            """
+        }
+    }
+    stage('Run Test') {
+        steps {
+            sh """#!/usr/bin/env bash
+                set -eux
+		echo "run binary work"
+                ./build/work
             """
         }
     }
