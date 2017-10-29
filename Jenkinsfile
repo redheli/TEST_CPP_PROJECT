@@ -11,6 +11,9 @@ stages {
             echo "Building ${env.BUILD_DIR}"
             sh """#!/usr/bin/env bash
                 set -eux
+		echo "running whoami" & whoami
+		echo "running groups" & groups
+		echo $PWD
                 mkdir build
                 cd build
                 cmake ..
