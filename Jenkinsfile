@@ -17,7 +17,7 @@ stages {
 		echo $PWD
 		echo "ls" && ls
 		echo "ls build" && ls -la build
-                mkdir build
+                mkdir -p build
                 cd build
                 cmake ..
                 make
