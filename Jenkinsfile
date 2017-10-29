@@ -2,7 +2,7 @@ pipeline {
 
 agent {
     docker {
-         image "tatsy:ubuntu-cxx"
+         image "tatsy/ubuntu-cxx"
          args "-u root"
     }
 }
