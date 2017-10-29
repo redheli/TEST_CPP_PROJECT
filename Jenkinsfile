@@ -15,7 +15,7 @@ stages {
 		echo "running whoami" & whoami
 		echo "running groups" & groups
 		echo $PWD
-		echo "ll" && ll
+		echo "ls" && ls
                 mkdir build
                 cd build
                 cmake ..
