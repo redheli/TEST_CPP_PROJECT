@@ -2,7 +2,7 @@ pipeline {
 
 agent {
     docker {
-         image "ubuntu:16.04"
+         image "tatsy:ubuntu-cxx"
          args "-u root"
     }
 }
